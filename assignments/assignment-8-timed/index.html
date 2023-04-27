@@ -61,26 +61,26 @@
 
             <h4>How Frequently?</h4>
             <div>
-                <label for="dailyInput">Daily</label>
+                <label for="dailyRadio">Daily</label>
                 <input
                     type="radio"
-                    id="dailyInput"
+                    id="dailyRadio"
                     name="daily"
                     value="Daily"
                 />
 
-                <label for="weeklyInput">Weekly</label>
+                <label for="weeklyRadio">Weekly</label>
                 <input
                     type="radio"
-                    id="weeklyInput"
+                    id="weeklyRadio"
                     name="weekly"
                     value="Weekly"
                 />
 
-                <label for="monthlyInput">Monthly</label>
+                <label for="monthlyRadio">Monthly</label>
                 <input
                     type="radio"
-                    id="monthlyInput"
+                    id="monthlyRadio"
                     name="monthly"
                     value="Monthly"
                 />
@@ -88,30 +88,25 @@
             <h4>Select Your Email Format</h4>
 
             <label for="emailFormatSelect">Your Email Format</label>
-            <select name="prefferedEmailFormat" id="emailFormatSelect" required>
+            <select name="preferredEmailFormat" id="emailFormatSelect" required>
                 <option value="HTML">HTML</option>
                 <option value="Plain Text">Plain Text</option>
             </select>
             <br />
 
             <br />
-            <label for="textarea">Your comments and suggestions</label>
+            <label for="commentsTextarea">Your comments and suggestions</label>
             <textarea
-                name="commentsTextarea"
-                id="textarea"
+                name="commentsAndSuggestions"
+                id="commentsTextarea"
                 cols="15"
                 rows="5"
             ></textarea>
 
             <br />
             <br />
-            <label for="submitInput">Submit Your Documents</label>
-            <input
-                type="submit"
-                id="submitInput"
-                name="submitYourDocuments"
-                required
-            />
+
+            <input type="submit" id="submitInput" required />
         </form>
     </body>
 </html>
