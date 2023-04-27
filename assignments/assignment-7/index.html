@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Application</title>
+        <title>Assignment-7</title>
     </head>
     <body>
         <div>
@@ -55,12 +55,12 @@
                     required
                 />
                 <p>Your gender</p>
-                <label for="maleInput">male</label>
-                <input type="radio" id="maleInput" name="male" value="male" />
-                <label for="femaleInput">female</label>
+                <label for="maleRadio">male</label>
+                <input type="radio" id="maleRadio" name="male" value="male" />
+                <label for="femaleRadio">female</label>
                 <input
                     type="radio"
-                    id="femaleInput"
+                    id="femaleRadio"
                     name="female"
                     value="female"
                 />
@@ -91,9 +91,13 @@
                 <label for="colorInput">Color</label>
                 <input type="color" id="colorInput" name="color" required />
                 <label for="subscriptionInput">Newsletter Subscription</label>
-                <input type="checkbox" id="subscriptionInput" name="button" />
+                <input
+                    type="checkbox"
+                    id="subscriptionInput"
+                    name="newsletterSubscription"
+                />
                 <label for="languageSelect">Preferred Language</label>
-                <select name="language" id="languageSelect" required>
+                <select name="preferredLanguage" id="languageSelect" required>
                     <option value="Uzbek">Uzbek</option>
                     <option value="English">English</option>
                     <option value="Russian">Russian</option>
@@ -116,7 +120,7 @@
                 <input type="range" id="feedbackRange" name="ratingRange" />
                 <label for="commentsTextarea">Comments</label>
                 <textarea
-                    name="textarea"
+                    name="comments"
                     id="commentsTextarea"
                     cols="15"
                     rows="5"
@@ -147,15 +151,14 @@
                     type="reset"
                     id="resetInput"
                     name="reset"
-                    value="Reset Your Application"
+                    value="Reset the Form"
                 />
                 <br />
                 <br />
-                <label for="submitInput"></label>
+
                 <input
                     type="submit"
                     id="submitInput"
-                    name="submit"
                     value="Submit Your Application"
                 />
                 <br />
