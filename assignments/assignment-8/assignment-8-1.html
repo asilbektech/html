@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timed assignment</title>
+    </head>
+    <body>
+        <form>
+            <h1>Timed Assignment</h1>
+
+            <label for="fullNameInput">Your Full name</label>
+            <input
+                type="text"
+                placeholder="Your Full name"
+                id="fullNameInput"
+                name="fullName"
+                required
+            />
+            <label for="ageInput">Your age</label>
+
+            <input
+                type="number"
+                id="ageInput"
+                name="age"
+                min="18"
+                max="32"
+                required
+            />
+            <label for="emailInput">Your Email</label>
+            <input
+                type="email"
+                placeholder="Your Email"
+                id="emailInput"
+                name="prefferedEmail"
+                required
+            />
+            <h4>Choose your preffered topics</h4>
+            <label for="sportsInput">Sports</label>
+            <input
+                type="checkbox"
+                id="sportsInput"
+                name="sports"
+                value="Sports"
+            />
+            <label for="technologyInput">Technology</label>
+            <input
+                type="checkbox"
+                id="technologyInput"
+                name="technology"
+                value="Technology"
+            />
+            <label for="travelInput">Travel</label>
+            <input
+                type="checkbox"
+                id="travelInput"
+                name="travel"
+                value="Travel"
+            />
+
+            <h4>How Frequently?</h4>
+            <div>
+                <label for="dailyRadio">Daily</label>
+                <input
+                    type="radio"
+                    id="dailyRadio"
+                    name="daily"
+                    value="Daily"
+                />
+
+                <label for="weeklyRadio">Weekly</label>
+                <input
+                    type="radio"
+                    id="weeklyRadio"
+                    name="weekly"
+                    value="Weekly"
+                />
+
+                <label for="monthlyRadio">Monthly</label>
+                <input
+                    type="radio"
+                    id="monthlyRadio"
+                    name="monthly"
+                    value="Monthly"
+                />
+            </div>
+            <h4>Select Your Email Format</h4>
+
+            <label for="emailFormatSelect">Your Email Format</label>
+            <select name="preferredEmailFormat" id="emailFormatSelect" required>
+                <option value="HTML">HTML</option>
+                <option value="Plain Text">Plain Text</option>
+            </select>
+            <br />
+
+            <br />
+            <label for="commentsTextarea">Your comments and suggestions</label>
+            <textarea
+                name="commentsAndSuggestions"
+                id="commentsTextarea"
+                cols="15"
+                rows="5"
+            ></textarea>
+
+            <br />
+            <br />
+
+            <input type="submit" id="submitInput" required />
+        </form>
+    </body>
+</html>
