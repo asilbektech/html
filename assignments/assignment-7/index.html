@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-7</title>
+    </head>
+    <body>
+        <div>
+            <h1>Personal Information</h1>
+
+            <form>
+                <label for="fullNameInput">Full name</label>
+                <input
+                    type="text"
+                    placeholder="Full name"
+                    id="fullNameInput"
+                    name="fullName"
+                    required
+                />
+                <label for="emailInput">Email</label>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    id="emailInput"
+                    name="email"
+                    required
+                />
+                <label for="phoneNumberInput">Phone number</label>
+                <input
+                    type="tel"
+                    placeholder="Phone number"
+                    id="phoneNumberInput"
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                    name="phoneNumber"
+                    required
+                />
+                <label for="birthDateInput">Birthdate</label>
+                <input
+                    type="date"
+                    placeholder="Birthdate"
+                    id="birthDateInput"
+                    max="2018-01-01"
+                    min="1990-01-01"
+                    name="birthdate"
+                    required
+                />
+                <label for="ageInput">Age</label>
+                <input
+                    type="number"
+                    placeholder="Age"
+                    id="ageInput"
+                    name="age"
+                    required
+                />
+                <p>Your gender</p>
+                <label for="maleRadio">male</label>
+                <input type="radio" id="maleRadio" name="male" value="male" />
+                <label for="femaleRadio">female</label>
+                <input
+                    type="radio"
+                    id="femaleRadio"
+                    name="female"
+                    value="female"
+                />
+
+                <h2>Account Details</h2>
+
+                <label for="usernameInput">Username</label>
+                <input
+                    type="text"
+                    placeholder="Username"
+                    id="usernameInput"
+                    name="username"
+                    required
+                />
+                <label for="passwordInput">Password</label>
+                <input
+                    type="password"
+                    placeholder="Password"
+                    id="passwordInput"
+                    name="password"
+                    required
+                />
+                <label for="hiddenInput">Secret Message</label>
+                <input type="hidden" id="hiddenInput" name="secretMessage" />
+
+                <h3>Preferences</h3>
+
+                <label for="colorInput">Color</label>
+                <input type="color" id="colorInput" name="color" required />
+                <label for="subscriptionInput">Newsletter Subscription</label>
+                <input
+                    type="checkbox"
+                    id="subscriptionInput"
+                    name="newsletterSubscription"
+                />
+                <label for="languageSelect">Preferred Language</label>
+                <select name="preferredLanguage" id="languageSelect" required>
+                    <option value="Uzbek">Uzbek</option>
+                    <option value="English">English</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Chinese">Chinese</option>
+                </select>
+
+                <h4>Attachments</h4>
+
+                <label for="fileInput">Profile Picture</label>
+                <input type="file" id="fileInput" name="profilePicture" />
+
+                <h4>Location</h4>
+
+                <label for="urlInput">Website</label>
+                <input type="url" id="urlInput" name="url" />
+
+                <h4>Feedback</h4>
+
+                <label for="feedbackRange">Rate Us</label>
+                <input type="range" id="feedbackRange" name="ratingRange" />
+                <label for="commentsTextarea">Comments</label>
+                <textarea
+                    name="comments"
+                    id="commentsTextarea"
+                    cols="15"
+                    rows="5"
+                ></textarea>
+
+                <h4>Schedule</h4>
+
+                <label for="timeInput">Preffered Metting Time</label>
+                <input
+                    type="time"
+                    id="timeInput"
+                    name="prefferedTime"
+                    required
+                />
+                <label for="weekInput">Preffered Metting Day</label>
+                <input type="week" id="weekInput" name="prefferedDay" />
+                <label for="monthInput">Preffered Metting Month</label>
+                <input type="month" id="monthInput" name="prefferedMonth" />
+
+                <h4>Search</h4>
+
+                <label for="searchInput">Search for articles</label>
+                <input type="search" id="searchInput" name="searchArticles" />
+                <br />
+                <br />
+                <label for="resetInput"></label>
+                <input
+                    type="reset"
+                    id="resetInput"
+                    name="reset"
+                    value="Reset the Form"
+                />
+                <br />
+                <br />
+
+                <input
+                    type="submit"
+                    id="submitInput"
+                    value="Submit Your Application"
+                />
+                <br />
+                <button>Sign Up<img src="signUp.png" alt="Sign Up" /></button>
+                <br />
+
+                <label for="imageInput">Icon Image</label>
+                <input
+                    type="image"
+                    id="imageInput"
+                    name="iconImage"
+                    src="images.jpeg"
+                />
+            </form>
+        </div>
+    </body>
+</html>
