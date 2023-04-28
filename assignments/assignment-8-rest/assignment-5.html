@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.5</title>
+    </head>
+    <body>
+        <form>
+            <h2>Submit a Support Ticket</h2>
+            <label for="fullNameInput">Full Name</label>
+            <input type="text" id="fullNameInput" name="fullName" required />
+            <label for="emailInput">Your Email</label>
+            <input type="email" id="emailInput" name="email" required />
+            <h4>Select the Priority of the Issue</h4>
+            <label for="lowRadioInput">Low</label>
+            <input type="radio" id="lowRadioInput" name="priorityOfTheIssue" />
+            <label for="mediumRadioInput">Medium</label>
+            <input
+                type="radio"
+                id="mediumRadioInput"
+                name="priorityOfTheIssue"
+            />
+            <label for="highRadioInput">High</label>
+            <input type="radio" id="highRadioInput" name="priorityOfTheIssue" />
+            <br />
+            <label for="categorySelect">Select the Issue Category</label>
+            <select name="issueCategory" id="categorySelect">
+                <option value="Technical Issue">Technical Issue</option>
+                <option value="Billing">Billing</option>
+                <option value="Account Management">Account Management</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="issueDetailTextarea">Describe the Issue Details</label>
+            <textarea
+                name="describeTheIssueDetails"
+                id="issueDetailTextarea"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <label for="screenshotFileInput">Upload Screenshots</label>
+            <input
+                type="file"
+                id="screenshotFileInput"
+                name="uploadScreenshots"
+                accept="image/"
+                required
+            />
+            <br />
+            <label for="additionalTextarea"
+                >Additional Information or Steps to Reproduce the Issue</label
+            >
+            <textarea
+                name="additionalInformation"
+                id="additionalTextarea"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <hr />
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+    </body>
+</html>
