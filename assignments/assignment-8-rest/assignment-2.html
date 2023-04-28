@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assigment-8.2</title>
+    </head>
+    <body>
+        <form>
+            <h1>Assignment-2</h1>
+
+            <label for="fullNameInput">Your Full Name</label>
+            <input
+                type="text"
+                placeholder="Your Full Name"
+                id="fullNameInput"
+                name="fullName"
+                required
+            />
+            <label for="emailInput">Your Email</label>
+            <input
+                type="email"
+                placeholder="Your Email"
+                id="emailInput"
+                name="preferredEmail"
+                required
+            />
+            <br />
+            <br />
+            <label for="rangeInput">Rate your Confidence Level</label>
+            <input
+                type="range"
+                id="rangeInput"
+                name="yourConfidenceLevel"
+                min="0"
+                max="10"
+            />
+            <label for="ageInput">Your age</label>
+            <input
+                type="number"
+                id="ageInput"
+                name="age"
+                min="18"
+                max="99"
+                required
+            />
+            <br />
+            <br />
+            <h4>Choose Your Favorite Quiz Categories</h4>
+            <label for="historyInput">
+                <input
+                    type="checkbox"
+                    id="historyInput"
+                    name="quizCategories"
+                    value="History "
+                />History</label
+            >
+
+            <label for="scienceInput">
+                <input
+                    type="checkbox"
+                    id="scienceInput"
+                    name="quizCategories"
+                    value="Science"
+                />Science</label
+            >
+
+            <label for="sportsInput">
+                <input
+                    type="checkbox"
+                    id="sportsInput"
+                    name="quizCategories"
+                    value="Sports"
+                />Sports</label
+            >
+
+            <label for="literatureInput">
+                <input
+                    type="checkbox"
+                    id="literatureInput"
+                    name="quizCategories"
+                    value="Literature"
+                />Literature</label
+            >
+
+            <br />
+            <br />
+            <h4>Your Preferred Quiz Format</h4>
+            <label for="multipleChoiceRadio">
+                <input
+                    type="radio"
+                    id="multipleChoiceRadio"
+                    name="preferredQuizFormat"
+                    value="Multiple Choice"
+                />Multiple Choice</label
+            >
+
+            <br />
+            <label for="trueFalseRadio">
+                <input
+                    type="radio"
+                    id="trueFalseRadio"
+                    name="preferredQuizFormat"
+                    value="True/False"
+                />True/False</label
+            >
+
+            <br />
+            <label for="blankRadio">
+                <input
+                    type="radio"
+                    id="blankRadio"
+                    name="preferredQuizFormat"
+                    value="Fill in the Blank"
+                />Fill in the Blank</label
+            >
+
+            <br />
+            <br />
+            <label for="timeZoneSelect">Your time zone</label>
+            <select name="timeZone" id="timeZoneSelect" required>
+                <option value="UTC-12">UTC-12</option>
+                <option value="UTC-11">UTC-11</option>
+                <option value="UTC-10">UTC-10</option>
+                <option value="UTC-9">UTC-9</option>
+                <option value="UTC-8">UTC-8</option>
+                <option value="UTC-7">UTC-7</option>
+                <option value="UTC-6">UTC-6</option>
+                <option value="UTC-5">UTC-5</option>
+                <option value="UTC-4">UTC-4</option>
+                <option value="UTC-3">UTC-3</option>
+                <option value="UTC-2">UTC-2</option>
+                <option value="UTC-1">UTC-1</option>
+                <option value="UTC-0">UTC-0</option>
+                <option value="UTC+1">UTC+1</option>
+                <option value="UTC+2">UTC+2</option>
+                <option value="UTC+3">UTC+3</option>
+                <option value="UTC+4">UTC+4</option>
+                <option value="UTC+5">UTC+5</option>
+                <option value="UTC+6">UTC+6</option>
+                <option value="UTC+7">UTC+7</option>
+                <option value="UTC+8">UTC+8</option>
+                <option value="UTC+9">UTC+9</option>
+                <option value="UTC+10">UTC+10</option>
+                <option value="UTC+11">UTC+11</option>
+                <option value="UTC+12">UTC+12</option>
+                <option value="UTC+13">UTC+13</option>
+                <option value="UTC+14">UTC+14</option>
+                <option value="UTC+15">UTC+15</option>
+            </select>
+            <br />
+            <br />
+            <label for="feedbackTextarea">Feedback or Suggestions</label>
+            <textarea
+                name="feedback"
+                id="feedbackTextarea"
+                cols="20"
+                rows="10"
+            ></textarea>
+            <button type="submit" id="submitButton" value="Submit">
+                Submit
+            </button>
+        </form>
+    </body>
+</html>
