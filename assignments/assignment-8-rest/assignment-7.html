@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.7</title>
+    </head>
+    <body>
+        <form>
+            <h2>Photo Contest Entry</h2>
+            <label for="fullNameInput">Full Name</label>
+            <input
+                type="text"
+                id="fullNameInput"
+                name="fullName"
+                placeholder="Full Name"
+                required
+            />
+            <label for="emailInput">Your Email Address</label>
+            <input
+                type="email"
+                id="emailInput"
+                name="email"
+                placeholder="Email"
+                required
+            />
+            <label for="photoInput">Upload a Photo</label>
+            <input
+                type="file"
+                id="photoInput"
+                name="photo"
+                accept="image/*"
+                required
+            />
+            <label for="agreeCheckbox"
+                >Agree to the Contest Terms and Conditions</label
+            >
+            <input
+                type="checkbox"
+                id="agreeCheckbox"
+                name="agreeToTheContest"
+                required
+            />
+            <br />
+            <br />
+            <label for="countrySelect">Select Your Country</label>
+            <select name="country" id="countrySelect">
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+            </select>
+            <label for="photoDescribtionTextarea"
+                >Description or Story About Your Photo</label
+            ><textarea
+                name="photoDescribtion"
+                id="photoDescribtionTextarea"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <hr />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

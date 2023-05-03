@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.6</title>
+    </head>
+    <body>
+        <form>
+            <h2>Event RSVP</h2>
+            <label for="fullNameInput">Full Name</label>
+            <input type="text" id="fullNameInput" name="fullName" />
+            <label for="emailInput">Your Email</label>
+            <input type="email" id="emailInput" name="yourEmail" />
+            <h4>Are You attending?</h4>
+            <label for="yesRadioInput">Yes</label>
+            <input
+                type="radio"
+                id="yesRadioInput"
+                name="attending"
+                value="Yes"
+            />
+            <label for="noRadioInput">No</label>
+            <input type="radio" id="noRadioInput" name="attending" value="No" />
+            <br />
+
+            <label for="numberInput">Number of Guests You Bringing</label>
+            <input type="number" id="numberInput" min="2" max="6" required />
+            <br />
+            <label for="mealPreferenceSelect"
+                >What's your meal preference</label
+            >
+            <select name="mealPreference" id="mealPreferenceSelect">
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Non-Vegetarian">Non-Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Gluten-Free">Gluten-Free</option>
+            </select>
+            <label for="requestsTextarea">Additonal notes or requests</label>
+            <textarea
+                name="notesOrRequests"
+                id="requestsTextarea"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <hr />
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+    </body>
+</html>

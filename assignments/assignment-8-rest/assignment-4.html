@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.4</title>
+    </head>
+    <body>
+        <form>
+            <div>
+                <h2>Take Survey</h2>
+                <label for="fullNameInput">Full name</label>
+                <input
+                    type="text"
+                    id="fullNameInput"
+                    name="fullName"
+                    required
+                />
+                <h4>Rate your Experience</h4>
+                <label for="exellentRadioInput">
+                    <input
+                        type="radio"
+                        id="exellentRadioInput"
+                        name="experience"
+                        value="Exellent"
+                    />Exellent</label
+                >
+
+                <label for="goodRadioInput">
+                    <input
+                        type="radio"
+                        id="goodRadioInput"
+                        name="experience"
+                        value="Good"
+                    />Good</label
+                >
+
+                <label for="averageRadioInput">
+                    <input
+                        type="radio"
+                        id="averageRadioInput"
+                        name="experience"
+                        value="Average"
+                    />Average</label
+                >
+
+                <label for="poorRadioInput">
+                    <input
+                        type="radio"
+                        id="poorRadioInput"
+                        name="experience"
+                        value="Poor"
+                    />Poor</label
+                >
+
+                <label for="veryPoorRadioInput">
+                    <input
+                        type="radio"
+                        id="veryPoorRadioInput"
+                        name="experience"
+                        value="Very Poor"
+                    />Very Poor</label
+                >
+                <br />
+                <label for="commentsTextarea">Any additional Comments</label>
+                <textarea
+                    name="comments"
+                    id="commentsTextarea"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <label for="phoneNumberInput">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phoneNumberInput"
+                    name="phoneNumber"
+                    placeholder="123-456-7890"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required
+                />
+                <label for="preferredContactSelect"
+                    >Preferred Contact Method</label
+                >
+                <select name="preferredContact" id="preferredContactSelect">
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                </select>
+                <br />
+                <label for="feedbackTextarea">Suggestions or Feedback</label>
+                <textarea
+                    name="suggestionsOrFeedback"
+                    id="feedbackTextarea"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <button type="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
